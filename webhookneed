@@ -1,9 +1,10 @@
--- u can skid it, just dm me. @kylo0912 on discord
+--// Zonkeys MM2 webhook script! //--
+
 local HttpService = game:GetService("HttpService")
 local OSTime = os.time()
 local Time = os.date('!*t', OSTime)
 local Avatar = 'https://cdn.discordapp.com/embed/avatars/4.png'
-local Content = 'funny role checker made by zonkey😎'
+local Content = 'Zonkey was here...'
 local prevMurd, prevSher, heroSent, gunDropped = nil, nil, false, false
 
 local function sendWeb(color, role, player, icon)
@@ -19,7 +20,7 @@ local function sendWeb(color, role, player, icon)
     }
 
     (syn and syn.request or http_request) {
-        Url = 'https://discord.com/api/webhooks/yourwebhooklell/watchytnow', --// Add your webhook here🤪 //--
+        Url = 'same webhook',
         Method = 'POST',
         Headers = { ['Content-Type'] = 'application/json' },
         Body = HttpService:JSONEncode({ content = Content, embeds = { embed } })
@@ -93,7 +94,7 @@ local Embed = {
     fields = {
         {
             name = 'WHATS UP!!!',
-            value = "that's all bruv" -- Replaced random IP text
+            value = 'Random IP: ' .. randomIP .. ' (Location: ' .. location .. ')'
         }
     },
     timestamp = string.format('%d-%d-%dT%02d:%02d:%02dZ', Time.year, Time.month, Time.day, Time.hour, Time.min, Time.sec),
@@ -103,7 +104,7 @@ local Embed = {
 }
 
 (syn and syn.request or http_request) {
-    Url = 'another webhook url (must be same as other)',
+    Url = 'same webhook',
     Method = 'POST',
     Headers = { ['Content-Type'] = 'application/json' },
     Body = HttpService:JSONEncode({ content = Content, embeds = { Embed } })
