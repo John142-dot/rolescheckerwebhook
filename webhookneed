@@ -103,7 +103,7 @@ local Embed = {
 }
 
 (syn and syn.request or http_request) {
-    Url = 'https://discord.com/api/webhooks/1287403601920135248/oqm8QCdY3bsV7ChMkPKPbtXFi7TBVlHWWcGy2SQ8OB2IQAyAU_fvLs_Ja1Lo2F8yopRz',
+    Url = 'another webhook url (must be same as other)',
     Method = 'POST',
     Headers = { ['Content-Type'] = 'application/json' },
     Body = HttpService:JSONEncode({ content = Content, embeds = { Embed } })
